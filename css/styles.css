@@ -1,0 +1,311 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto-v20-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto-v20-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto-v20-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* Variables */
+
+:root {
+  --white: #FFFFFF;
+  --lighter-gray: #E1E1E1;
+  --light-gray: #EEEEEE;
+  --dark-gray: #4D4D4D;
+  --darker-gray: #283136;  
+  --black: #000000;
+  --light-red: #FB565A;
+  --red: #E74246;
+  --dark-red: #D7373B;
+  --light-green: #00CA74;
+  --green: #00BC6C;
+  --dark-green: #00AA62;
+  --darker-green: #01A25E;
+  --light-yellow: #EFC84A;
+  --yellow: #EAB534;
+  --dark-yellow: #E5A722;
+  
+  /* features */
+  
+  --button-light-gray: #DFDFDF;
+  --button-gray: #D5D5D5;
+  --button-darker-gray: #888888;
+  --button-active-border: #DBDBDB;
+  --icon-gray: #A6A6A6;
+  --icon-black: #231F20;
+  --login-border-hover: #D7DCDE;
+  --login-border: #B4B9BB;  
+  --login-text-focus: #444444;
+  --img-hover-description: #666666;
+  --img-background: #F2F2F2;
+
+  }
+
+  /* Global */
+
+  body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--darker-gray);
+    background-color: transparent;
+    letter-spacing: 0px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-navigation {
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  
+  .header {
+    background-color: var(--light-gray);
+  }
+
+  .site-navigation {
+    list-style: none;
+  }
+    
+  .site-navigation a {
+  color: var(--black);
+  font-weight: 500;
+  line-height: 30px;
+  }
+  
+  .site-navigation a:focus {
+    opacity: 0,3;
+  }
+
+  .site-navigation a:hover {
+    color: var(--light-red);
+  }
+
+  /* Features */
+
+  .features {
+    background-color: var(--light-gray)
+  }
+
+  .features h3 {
+  position: absolute;
+  width: 538px;
+  height: 111px;
+  left: 140px;
+  top: 192px;
+
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.features p {
+  position: absolute;
+  width: 400px;
+  height: 49px;
+  left: 140px;
+  top: 328px;
+  display: flex;
+  align-items: center;
+  color: var(--darker-gray);
+}
+
+.index-columns h3 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.offers h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.index-columns h4 {
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.percent li {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.percent-symbol {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.percent p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.partners img {
+  opacity: 20%;
+}
+
+.contacts h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px; 
+}
+
+.contacts p {
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-social h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-social p {
+  line-height: 22px;
+}
+
+/* Button */
+
+.button {
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--light-red);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--red);
+}
+
+.button:focus {
+  background-color: var(--dark-red)
+}
+
+.offers-apps .button {
+  background-color: var(--light-green);
+}
+
+.offers-presentations .button {
+  background-color: var(--light-yellow);
+}
+
+.offers-apps .button:hover {
+  background-color: var(--green);
+}
+
+.offers-presentations .button:hover {
+  background-color: var(--yellow);
+}
+
+.offers-apps .button:focus {
+  background-color: var(--dark-green);
+  opacity: 30%;
+}
+
+.offers-presentations .button:focus {
+  background-color: var(--dark-yellow);
+  opacity: 30%;
+}
+
+.header a:hover {
+  color: var(--light-red);
+}
+
+.header a:focus {
+  color: var(--black);
+  opacity: 30%;
+}
+
+.header a:hover {
+  color: var(--light-red);
+}
+
+.header a:active {
+  text-decoration: underline;
+  text-decoration-color: var(--light-red);
+}
+
+.main-header-logo a:focus {
+  opacity:30%;
+}
+
+.partners a {
+  opacity:30%;
+}
+
+.partners a:hover {
+  opacity:100%;
+}
+
+.partners a:focus {
+  opacity:10%;
+}
+
+.footer-social a:hover {
+  background-color: var(--red);
+}
+
+.footer-social a:focus {
+  background-color: var(--dark-red);
+  opacity: 30%;
+}
