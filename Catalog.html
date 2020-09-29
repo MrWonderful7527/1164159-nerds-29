@@ -8,28 +8,52 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
         <img src="https://via.placeholder.com/160x65" alt="Логотип студии «Нёрдс»">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
+          <li><a href="blank.html">Корзина</a></li>
         </ul>
-        <a href="blank.html">Корзина</a>
       </nav>
     </header>
     <main>
       <h2>Магазин готовых шаблонов</h2>
-        <section>
+        <section class="filter">
           <h2>Фильтр товаров</h2>
+            <h3>Стоимость:</h3>
+              <p><form></form></p>
+              <p>От <form>0</form></p><p>До <form>15 000</form></p>
+            <h3>Сетка:</h3>
+            <ul>
+              <li>Адаптивная</li>
+              <li>Фиксированная</li>
+              <li>Резиновая</li>
+            </ul>
+            <h3>Особенности:</h3>
+            <ul>
+              <li>Слайдер</li>
+              <li>Блок преимуществ</li>
+              <li>Новости</li>
+              <li>Галерея</li>
+              <li>Корзина</li>
+            </ul>
+          <button class="button-show">Показать</button>
         </section>
-        <section>
+        <section class="products">
           <h2>Список шаблонов</h2>
-          <ul>
+            <h3>Сортировать :</h3>>
+            <ul>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По названию</li>
+            </ul>
+            <ul>
             <li>
               <a href="product.html">
                 <h3>Sedona</h3>
@@ -40,7 +64,7 @@
               <p>
                 Информационный сайт для туристов
               </p>  
-              <button button class="button" type="button">9 900 р</button>
+              <button class="button">9 900 р</button>
             </li>
             <li>
               <a href="product.html">
@@ -52,7 +76,7 @@
               <p>
                 Сайт мобильного приложения
               </p>  
-              <button button class="button" type="button">$</button>
+              <button class="button">9 900 р</button>
             </li>
             <li>
               <a href="product.html">
@@ -64,7 +88,7 @@
               <p>
                 Сайт барбершопа
               </p>
-              <button button class="button" type="button">$</button>
+              <button class="button">9 900 р</button>
             </li>
             <li>
               <a href="product.html">
@@ -76,7 +100,7 @@
               <p>
                 Сайт вязаных изделий
               </p>  
-              <button button class="button" type="button">$</button> 
+              <button class="button">9 900 р</button> 
             </li>
             <li>
               <a href="product.html">
@@ -88,7 +112,7 @@
               <p>
                 Сайт образовательного ресурса
               </p>  
-              <button button class="button" type="button">$</button> 
+              <button class="button">9 900 р</button> 
             </li>
             <li>
               <a href="product.html">
@@ -100,7 +124,7 @@
               <p>
                 Сайт производителя крафтового кваса
               </p>  
-              <button button class="button" type="button">$</button> 
+              <button class="button">9 900 р</button> 
             </li>
           </ul>
           <ul>
@@ -117,6 +141,12 @@
               <a href="#">Следующая</a>
             </li>
           </ul>
+          <ul>
+            <li><button class="button-page">1</button></li>
+            <li><button class="button-page">2</button></li>
+            <li><button class="button-page">3</button></li>
+            <li><button class="button-page">Следующая</button></li>
+          </ul>>
         </section>
     </main>
     <footer>

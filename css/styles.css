@@ -100,7 +100,7 @@
   }
 
   .main-navigation {
-    font-family: Roboto;
+    font-family: "Roboto", "Arial", "sans-serif";
     font-weight: 500;
     line-height: 30px;
   }
@@ -307,5 +307,37 @@
 
 .footer-social a:focus {
   background-color: var(--dark-red);
+  opacity: 30%;
+}
+
+.button-page {
+  background-color: var(--light-gray);
+}
+
+.button-page:hover {
+  background-color: var(--button-light-gray);
+}
+
+.button-page:focus {
+  background-color: var(--button-gray);
+  opacity: 30%;
+}
+
+.button-page:active {
+  background-color: var(--white);
+  border-radius: 3px;
+  border-color: var(--button-active-border);
+}
+
+.button-show {
+  background-color: var(--light-gray);
+}
+
+.button-show:hover {
+  background-color: var(--button-light-gray);
+}
+
+.button-show:focus {
+  background-color: var(--button-gray);
   opacity: 30%;
 }
