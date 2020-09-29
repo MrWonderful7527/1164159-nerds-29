@@ -310,6 +310,8 @@
   opacity: 30%;
 }
 
+/* Catalog */
+
 .button-page {
   background-color: var(--light-gray);
 }
@@ -340,4 +342,45 @@
 .button-show:focus {
   background-color: var(--button-gray);
   opacity: 30%;
+}
+
+.inner-page h2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+.inner-page h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sort li {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  opacity: 30%;
+}
+
+.sort li:active {
+  opacity: 100%;
+}
+
+.filter li {
+line-height: 19px;
+color: var(--darker-gray);
+}
+
+.filter p {
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--darker-gray);
+}
+
+.products p {
+  line-height: 18px;
+  text-align: center;
+  color: var(--img-hover-description)
 }
