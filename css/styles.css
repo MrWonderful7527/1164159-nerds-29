@@ -100,6 +100,40 @@
     height: auto;
   }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important; 
+    width: 1px !important; 
+    overflow: hidden;
+  }
+  /* Grid */
+
+  .page {
+    height: 100%;
+  }
+
+  .page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
+
+  .main-header {
+    margin-bottom: 70px;
+  }
+
   .main-navigation {
     font-family: "Roboto", "Arial", "sans-serif";
     font-weight: 500;
@@ -110,8 +144,36 @@
     background-color: var(--light-gray);
   }
 
+  .main-header-logo {
+    margin: 140px;
+  }
+
   .site-navigation {
-    list-style: none;
+    display: grid;
+    list-style-type: none;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / -1; 
+    background-color: var(--light-gray);
+  }
+
+  .site-navigation li {
+    display: inline-block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 45px;
+  }
+
+
+  .site-navigation-wrapper {
+    text-align: center;
+    display: block;
+    padding: 16px;
   }
     
   .site-navigation a {
@@ -144,7 +206,6 @@
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  display: flex;
   align-items: center;
 }
 
@@ -154,19 +215,51 @@
   height: 49px;
   left: 140px;
   top: 328px;
-  display: flex;
   align-items: center;
   color: var(--darker-gray);
+}
+
+.features-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 397px auto;
+  grid-template-rows: 431px;
+}
+
+.features-list li {
+  display: grid;
+  grid-column: 1;
+}
+
+.header-slider {
+  grid-column: -1;
+}
+
+.index-columns {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 149px; 
 }
 
 .index-columns h3 {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  
 }
 
 .offers {
   list-style: none;
+  padding-left: 140px;
+  padding-top: 80px;
+}
+
+.offers-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .offers h3 {
@@ -203,13 +296,22 @@
 
 .about {
   list-style: none;
+  padding-left: 140px;
 }
 
 .percent {
   list-style: none;
 }
 
+/* partners */
+
 .partners {
+  list-style: none;
+}
+
+.partners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style: none;
 }
 
@@ -313,6 +415,7 @@
 
 .main-header-logo a:focus {
   opacity:30%;
+  
 }
 
 .partners a {

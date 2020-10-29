@@ -10,34 +10,35 @@
   <body class="page-body">
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-header-logo">
-        <img src="img\nerds-logo.png" width="160" height="65" alt="Логотип студии «Нёрдс»">
-        </a>
         <ul class="site-navigation">
+          <li><a href="index.html" class="main-header-logo"><img src="img\nerds-logo.png" width="160" height="65" alt="Логотип студии «Нёрдс»"></a></li>
+          <div class="site-navigation-wrapper">
           <li><a href="blank.html">Студия</a></li>
           <li><a href="blank.html">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
-          <li><a href="blank.html"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/>
-            </svg>Корзина</a></li>
+          </div>
+        <li><a href="blank.html"><svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="#A6A6A6"/></svg>Корзина</a></li>
+
         </ul>
       </nav>
     </header>
     <main class="container">
-     
-      <h1>Студия «Нёрдс»</h1>
-      
+      <h1 class="visually-hidden">Студия «Нёрдс»</h1>
       <section class="features">
-        <h2>Преимущества</h2>
-          <h3>Долго, дорого, <br>
-           скрупулезно</h3>
-          <p>Математически выверенный дизайн <br>
-            для вашего сайта или мобильного приложения.</p>
-          <button class="button" href="blank.html">Узнать больше</button>
-      </section>
-      <section class="header-slider">
-        <img src="img/nerds-index-slide1 1.png" width="760" height="431">
+        <h2  class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li>
+            <h3>Долго, дорого, <br>
+            скрупулезно</h3></li>
+          <li><p>Математически выверенный дизайн <br>
+            для вашего сайта или мобильного приложения.</p></li>
+          <li><button class="button" href="blank.html">Узнать больше</button>
+          </li>
+          <li class="header-slider">
+            <img src="img/nerds-index-slide1 1.png" width="760" height="431">
+          </li>
+        </ul>
       </section>
       <section class="offers">
         <h2>Предложения</h2>
@@ -67,7 +68,7 @@
       </section>
     <div class="index-columns">
       <section class="about">
-        <h2>О студии</h2>
+        <h2  class="visually-hidden">О студии</h2>
           <h3>Мы - маленькая, но гордая <br>
             дизайн-студия из Краснодара</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>
@@ -93,8 +94,8 @@
       </section>
     </div>
       <section class="partners">
-        <h2>Партнеры</h2>
-          <ul>
+        <h2 class="visually-hidden">Партнеры</h2>
+          <ul class="partners-list">
             <li><a><img src="img/Group 5.png" width="199" height="68" alt="Логотип «HTML-academy»"></a></li>
             <li><a><img src="img/logo-2 1.png" width="289" height="90" alt="Логотип барбершопа «Бородинский»"></a></li>
             <li><a><img src="img/logo-3 1.png" width="185" height="52" alt="Логотип «Pink»"></a></li>
