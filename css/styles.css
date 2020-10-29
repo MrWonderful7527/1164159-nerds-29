@@ -200,8 +200,7 @@
   position: absolute;
   width: 538px;
   height: 111px;
-  left: 140px;
-  top: 192px;
+
 
   font-weight: 500;
   font-size: 55px;
@@ -213,8 +212,7 @@
   position: absolute;
   width: 400px;
   height: 49px;
-  left: 140px;
-  top: 328px;
+
   align-items: center;
   color: var(--darker-gray);
 }
@@ -227,7 +225,6 @@
 }
 
 .features-list li {
-  display: grid;
   grid-column: 1;
 }
 
@@ -514,9 +511,14 @@ color: var(--darker-gray);
   color: var(--img-hover-description)
 }
 
-.circle{
+.circle {
   width: 79px;
   height: 79px;
   background-color: var(--lighter-gray);
-  border-radius: 50%
+  border-radius: 50%;
+  display: flex;
+}
+
+.circle svg {
+  margin: auto;
 }
